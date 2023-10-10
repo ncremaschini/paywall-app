@@ -28,7 +28,7 @@
         sessionId: '',
         lineItems: [
           {
-            price: 'price_1NzmfMBLQdUhcSv9Fp8HTbsc', // The id of the recurring price you created in your Stripe dashboard
+            price: 'price_1NznItBLQdUhcSv9ipfsrdRU', // The id of the recurring price you created in your Stripe dashboard
             quantity: 1,
           },
         ],
