@@ -23,3 +23,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Try stripe payemnt
+use this credit card number:
+`4242424242424242`

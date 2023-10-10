@@ -23,12 +23,12 @@
     data() {
       return {
         publishableKey: 
-          'pk_test_51MlUlIIfSGgugy8a3BP9NeyNrH5lOQRcVJDJuQedLzpSZoLZMUo0HwwBv0RlEUAUqPOck2hCdqK09k2dng5HmitX00nOyQ6wMV',
+          'pk_test_51Nzd5xBLQdUhcSv9wat8ayHL8V3WRxwVcjvS3oGpefamNq1VwTeI3zzeDZih3JEXV7zo0CoYxuvefKoJOLhBQbr200K4ujEdKW',
         loading: false,
         sessionId: '',
         lineItems: [
           {
-            price: 'price_1MlekDIfSGgugy8aCCvtVhmX', // The id of the recurring price you created in your Stripe dashboard
+            price: 'price_1NzmfMBLQdUhcSv9Fp8HTbsc', // The id of the recurring price you created in your Stripe dashboard
             quantity: 1,
           },
         ],
