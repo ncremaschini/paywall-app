@@ -22,7 +22,7 @@
     },
     data() {
       return {
-        publishableKey:
+        publishableKey: 
           'pk_test_51MlUlIIfSGgugy8a3BP9NeyNrH5lOQRcVJDJuQedLzpSZoLZMUo0HwwBv0RlEUAUqPOck2hCdqK09k2dng5HmitX00nOyQ6wMV',
         loading: false,
         sessionId: '',
@@ -32,7 +32,6 @@
             quantity: 1,
           },
         ],
-        // successURL: window.location.origin + '/success',
         successURL:
           'https://subscription-server.herokuapp.com/subscription/success?session_id={CHECKOUT_SESSION_ID}',
         cancelURL: window.location.origin + '/cancel',
