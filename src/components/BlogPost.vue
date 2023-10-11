@@ -20,7 +20,7 @@
     },
     async mounted() {
       let article = await fetch(
-        'https://subscription-server.herokuapp.com/post/' + this.$route.params.id,
+        'https://paywall-be.vercel.app/post/' + this.$route.params.id,
         {
           headers: {
             'Content-Type': 'application/json',
