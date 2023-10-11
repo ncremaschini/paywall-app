@@ -31,13 +31,6 @@
           <li></li>
           <li></li>
         </ul>
-        <div class="social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-github"></i>
-        </div>
-  
         <a :href="`post/${id}`">
           <button>{{ subscribed ? 'Read' : 'Premium' }}</button>
         </a>

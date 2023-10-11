@@ -16,24 +16,27 @@
   <script>
   // :sessionId="sessionId"
   import { StripeCheckout } from '@vue-stripe/vue-stripe';
+  
+  let publishableKey = process.env.VUE_APP_STRIPE_KEY; 
+  let priceId = process.env.VUE_APP_STRIPE_PRICE_ID;
+  let success_url = process.env.VUE_APP_BE_URL + '/subscription/success?session_id={CHECKOUT_SESSION_ID}'
+
   export default {
     components: {
       StripeCheckout,
     },
     data() {
       return {
-        publishableKey: 
-          'pk_test_51Nzd5xBLQdUhcSv9wat8ayHL8V3WRxwVcjvS3oGpefamNq1VwTeI3zzeDZih3JEXV7zo0CoYxuvefKoJOLhBQbr200K4ujEdKW',
+        publishableKey: process.env.VUE_APP_STRIPE_KEY,
         loading: false,
         sessionId: '',
         lineItems: [
           {
-            price: 'price_1NznItBLQdUhcSv9ipfsrdRU', // The id of the recurring price you created in your Stripe dashboard
+            price: priceId, // The id of the recurring price you created in your Stripe dashboard
             quantity: 1,
           },
         ],
-        successURL:
-          'https://paywall-be.vercel.app/subscription/success?session_id={CHECKOUT_SESSION_ID}',
+        successURL: success_url,
         cancelURL: window.location.origin + '/cancel',
       };
     },

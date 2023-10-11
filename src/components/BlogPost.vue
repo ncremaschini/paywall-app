@@ -19,8 +19,9 @@
       };
     },
     async mounted() {
+      const be_endpoint = process.env.VUE_APP_BE_URL + '/post/';
       let article = await fetch(
-        'https://paywall-be.vercel.app/post/' + this.$route.params.id,
+        be_endpoint + this.$route.params.id,
         {
           headers: {
             'Content-Type': 'application/json',
