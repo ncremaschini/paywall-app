@@ -24,7 +24,7 @@ export default {
     this.customerId = this.getCookie('customerId');
 
     let postsUrl = process.env.VUE_APP_BE_URL + '/posts'
-    console.log('fetching stories from' + postsUrl )
+    console.log('fetching stories from ' + postsUrl )
     let stories = await fetch(postsUrl);
     let serialized = await stories.json();
     this.stories = serialized;
