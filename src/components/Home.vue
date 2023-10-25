@@ -24,11 +24,11 @@ export default {
     this.customerId = this.getCookie('customerId');
 
     let postsUrl = process.env.VUE_APP_BE_URL + '/posts';
-    const postsHeaders = {"x-api-key": process.env.BE_API_KEY};
+    const headers = {"x-api-key": process.env.BE_API_KEY};
     
     console.log('fetching stories from ' + postsUrl );
 
-    let stories = await fetch(postsUrl, postsHeaders);
+    let stories = await fetch(postsUrl, {headers});
     let serialized = await stories.json();
     this.stories = serialized;
   },
