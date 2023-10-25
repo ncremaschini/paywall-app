@@ -23,9 +23,12 @@ export default {
   async mounted() {
     this.customerId = this.getCookie('customerId');
 
-    let postsUrl = process.env.VUE_APP_BE_URL + '/posts'
-    console.log('fetching stories from ' + postsUrl )
-    let stories = await fetch(postsUrl);
+    let postsUrl = process.env.VUE_APP_BE_URL + '/posts';
+    const postsHeaders = {"x-api-key": process.env.BE_API_KEY};
+    
+    console.log('fetching stories from ' + postsUrl );
+
+    let stories = await fetch(postsUrl, postsHeaders);
     let serialized = await stories.json();
     this.stories = serialized;
   },
