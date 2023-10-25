@@ -24,7 +24,7 @@ export default {
     this.customerId = this.getCookie('customerId');
 
     let postsUrl = process.env.VUE_APP_BE_URL + '/posts';
-    const headers = {"x-api-key": process.env.BE_API_KEY};
+    const headers = {"x-api-key": process.env.VUE_APP_BE_API_KEY};
     
     console.log('fetching stories from ' + postsUrl );
 
