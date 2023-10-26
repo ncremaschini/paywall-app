@@ -31,6 +31,8 @@ export default {
     let stories = await fetch(postsUrl, { headers });
     let serialized = await stories.json();
     this.stories = serialized;
+
+    console.log(stories);
   },
   data() {
     return {
